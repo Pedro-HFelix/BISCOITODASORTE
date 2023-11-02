@@ -22,6 +22,14 @@ const fortune = [
 
 fortuneCookie.addEventListener('click', handleTryClick)
 tryAgain.addEventListener('click', toggleScreen)
+document.addEventListener('keydown', function(e) {
+    if(e.key == 'Enter' && view2.classList.contains('hide')){
+        handleTryClick()
+    } else if(e.key == 'Enter' && screen1.classList.contains('hide')){
+        toggleScreen()
+        }
+    }
+)
 
 function handleTryClick() {
     toggleScreen()
