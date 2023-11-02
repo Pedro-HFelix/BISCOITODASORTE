@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script&family=Montserrat:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+      
+}
+
+:root{
+    font-size: 62.5%;
+    
+    --background-linear:linear-gradient(45deg, #190361, #bb00ff);
+    --white-color: #FFFF; 
+    --title-color: #34355B;
+
+    --font-dancing-script: 'Dancing Script', cursive;
+    --font-dm-sans: 'DM Sans', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+    background: var(--background-linear);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+  }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+main{
+    width: 42.8rem;
+    height: 42.4rem;
+    background-color: var(--white-color);
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    width: 300px;
+    height: 312px;
+    text-align: center;
+}
+
+#box #title{
+    color: var(--title-color);
+    font-family: var(--font-montserrat);
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#box #text{
+    color: #34355B;
+    text-align: center;
+    font-family: var(--font-dm-sans);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1.4rem;
+}
+
+#box{
+    
+}
